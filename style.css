@@ -1,0 +1,21 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: skyblue;
+    display:grid;
+    justify-content: center;
+}
+#gameBoard {
+    width:40vw;
+    height:60vh;
+    background-color:lightgreen;
+    border: solid black;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#item {
+    border: solid black 10px;
+}
+h1 {
+    text-align: center;
+}
