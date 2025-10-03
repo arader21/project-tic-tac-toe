@@ -1,21 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: skyblue;
-    display:grid;
-    justify-content: center;
+  background-color:lightblue;
+  height: 100vh;
+  width: 100%;
 }
-#gameBoard {
-    width:40vw;
-    height:60vh;
-    background-color:lightgreen;
-    border: solid black;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+
 }
-#item {
-    border: solid black 10px;
+.screen {
+  display:grid;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border: 5px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
+.cell {
+    border: 5px solid black;
+    font-size: 10em;
+    align-items: center;
+    text-align: center;
+
+}
+
 h1 {
     text-align: center;
 }

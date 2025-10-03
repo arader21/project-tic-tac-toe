@@ -11,3 +11,22 @@ const winConditions =[
     [2, 5, 8],
     [3, 6, 9]
 ];
+let options = ["", "", "", "", "", "", "", "", ""];
+let currentPlayer = "X"
+let running = false;
+
+function startGame(){
+    cells.forEach(cell => cell.addEventListener("click", cellClicked));
+    restartBtn.addEventListener("click", restartGame);
+    statusText.textContent = `${currentPlayer}'s turn`;
+    running = true;
+}
+function cellClicked(){
+    const cellIndex = this.getAttribute("cellIndex");
+    if(options[cellIndex] != "" || !running){
+        return;
+    }
+updateCell(this, cellIndex);
+changePlayer();
+checkWinner();
+}
