@@ -15,7 +15,7 @@ body {
   margin-top: 16px;
 
 }
-.screen {
+#cellContainer {
   display:grid;
   width: 600px;
   height: 600px;
@@ -29,7 +29,7 @@ body {
     font-size: 10em;
     align-items: center;
     text-align: center;
-
+    cursor: pointer;
 }
 
 h1 {
